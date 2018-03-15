@@ -8,7 +8,7 @@ datetime <- as.POSIXct(strptime(datetime , "%d/%m/%Y %H:%M:%S", tz = "UTC"))
 
 twoday_householdpower <- cbind(twoday_householdpower, datetime)
 
-png("plot1.png")
+png("plot2.png")
 
 with(twoday_householdpower, 
     plot(datetime, Global_active_power, type = "l", 
